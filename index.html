@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="map.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="map.css"> -->
+    <script src="http://code.jquery.com/jquery-3.6.0.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <main>
+    <section id="category">
+        <div class="inner">
+          <div class="category-container">
+            <!-- <h2 class="category-title">맛집지도 카테고리를 선택해보세요</h2> -->
+            <div class="category-list">
+              <button class="category-item" id="center">중구</button>
+              <button class="category-item"id="east">동구</button>
+              <button class="category-item" id="west">서구</button>
+              <button class="category-item"id="yeongdo">영도구</button>
+              <button class="category-item" id="jingu">부산진구</button>
+              <button class="category-item"id="donglae">동래구</button>
+              <button class="category-item" id="yeonje">연제구</button>
+              <button class="category-item"id="geumjeong">금정구</button>
+              <button class="category-item" id="north">북구</button>
+              <button class="category-item"id="sasang">사상구</button>
+              <button class="category-item" id="saha">사하구</button>
+              <button class="category-item"id="gangseo">강서구</button>
+              <button class="category-item"id="south">남구</button>
+              <button class="category-item"id="haeundae">해운대구</button>
+              <button class="category-item"id="suyeong">수영구</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    <div id="map" class="inner" style="width:700px;height:800px; margin : auto;"></div>
+    </main>
+</body>
+<script>
+    // html dom 이 다 로딩된 후 실행된다.
+    $(document).ready(function(){
+        // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
+        $(".menu>a").click(function(){
+            var submenu = $(this).next("ul");
+ 
+            // submenu 가 화면상에 보일때는 위로 보드랍게 접고 아니면 아래로 보드랍게 펼치기
+            if( submenu.is(":visible") ){
+                submenu.slideUp();
+            }else{
+                submenu.slideDown();
+            }
+        });
+    });
+</script>
+<script type="text/javascript"
+src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0dc862d5a6fc40d91233d10a4616433e"></script>
+<script src="script.js"></script>
+
+</html>
