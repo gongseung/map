@@ -17,7 +17,7 @@ https://apis.map.kakao.com/web/sample/addMapControl/
 */
 
 // 지도에 확대 축소 컨트롤을 생성
-let zoomControl = new kakao.maps.ZoomControl();
+let zoomControl = new kakao.maps.ZoomControl(); 
 
 // 지도의 우측에 확대 축소 컨트롤을 추가
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
