@@ -1,0 +1,17 @@
+.filter_wrap {
+  position: absolute;
+  z-index: 100;
+  margin-top: 15px;
+  margin-left: 15px;
+  height: calc(100vh - 30px);
+}
+
+.filter_wrap .filter_btn {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  border: 2px;
+  border-color: white;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0);
+}
